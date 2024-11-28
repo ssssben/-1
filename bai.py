@@ -8,5 +8,5 @@ while True:
         print(suuji,"を二倍にすると",kekka,"になります。")
         break
     else:
-        print("それは数じゃねぇ")
+        print("正確な数値ではありません。")
 
