@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # requirements.txtに依存があればインストール
+          pip install unittest mock 
 
       - name: Run tests
         run: |
