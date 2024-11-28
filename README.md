@@ -12,12 +12,14 @@ Pythonでユーザーに数字を入力させて、それが数じゃないな�
 
 リポジトリをクローン
 
-```git clone https://github.com/ssssben/-1.git
+```
+git clone https://github.com/ssssben/-1.git
 ```
 
 ディレクトリに移動
 
-```cd kadai1
+```
+cd kadai1
 ```
 ## 使い方
 
@@ -25,7 +27,8 @@ Pythonでユーザーに数字を入力させて、それが数じゃないな�
 
 数字を入力した場合
 
-```./bai.py
+```
+./bai.py
 ```
 数字を入力してください: 11
 
@@ -34,7 +37,8 @@ Pythonでユーザーに数字を入力させて、それが数じゃないな�
 
 数字以外を入力した場合
 
-```./bai.py
+```
+./bai.py
 ```
 数字を入力してください: abc
 
