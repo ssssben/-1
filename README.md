@@ -11,10 +11,10 @@ Pythonでユーザーに数字を入力させて、それが数じゃないな�
 ## インストール方法
 
 ```
-##リポジトリをクローン
+リポジトリをクローン
 git clone https://github.com/ssssben/baisuu.git
 
-##ディレクトリに移動
+ディレクトリに移動
 $ cd kadai1
 ```
 ## 使い方
