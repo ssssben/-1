@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # requirements.txtに書かれた依存関係をインストール
+          pip install -r requirements.txt  # requirements.txtがルートにあることを確認
 
       - name: Run tests
         run: |
