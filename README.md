@@ -21,7 +21,7 @@ cd kadai1
 
 数字を入力した場合
 
-$ ./bai.py
+``$ ./bai.py
 
 数字を入力してください: 114
 
@@ -29,7 +29,7 @@ $ ./bai.py
 
 数字以外を入力した場合
 
-$ ./bai.py
+``$ ./bai.py
 
 数字を入力してください: ueda
 
@@ -43,18 +43,18 @@ $ ./bai.py
 
 サンプルコード
 
- #!/usr/bin/env python3
+``#!/usr/bin/env python3
 
- while True:
-     suuji = input("数字を入力してください: ")
+while True:
+    suuji = input("数字を入力してください: ")
 
-     if suuji.isdigit():
-         kazu = int(suuji)
-         kekka = kazu * 2
-         print(suuji, "を二倍にすると", kekka, "になります。")
-         break
-     else:
-         print("それは数じゃねぇ")
+    if suuji.isdigit():
+        kazu = int(suuji)
+        kekka = kazu * 2
+        print(suuji, "を二倍にすると", kekka, "になります。")
+        break
+    else:
+        print("それは数じゃねぇ")
 
 
 ## ライセンス
@@ -63,4 +63,3 @@ $ ./bai.py
 
 ## 必要条件
 Python3を使うのでPython 3.6以上
-```a
