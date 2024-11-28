@@ -52,6 +52,7 @@ $ ./bai.py
 
 サンプルコード
 
+```python
 #!/usr/bin/env python3
 
 while True:
@@ -63,7 +64,7 @@ while True:
         print(suuji, "を二倍にすると", kekka, "になります。")
         break
     else:
-        print("それは数じゃねぇ")
+        print("正確な数値ではありません。")
 
 
 ## ライセンス
