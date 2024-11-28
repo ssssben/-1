@@ -25,27 +25,33 @@ $ ./bai.py
 114 を二倍にすると228 になります。
 
 数字以外を入力した場合
+
 $ ./bai.py
+
 数字を入力してください: ueda
+
 それは数じゃねぇ
+
 数字を入力してください: 514
+
 514 を二倍にすると 1028 になります。
+
 ## サンプル
 
 サンプルコード
 
-#!/usr/bin/env python3
+ #!/usr/bin/env python3
 
-while True:
-    suuji = input("数字を入力してください: ")
+ while True:
+     suuji = input("数字を入力してください: ")
 
-    if suuji.isdigit():
-        kazu = int(suuji)
-        kekka = kazu * 2
-        print(suuji, "を二倍にすると", kekka, "になります。")
-        break
-    else:
-        print("それは数じゃねぇ")
+     if suuji.isdigit():
+         kazu = int(suuji)
+         kekka = kazu * 2
+         print(suuji, "を二倍にすると", kekka, "になります。")
+         break
+     else:
+         print("それは数じゃねぇ")
 
 
 ## ライセンス
