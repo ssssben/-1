@@ -65,7 +65,7 @@ while True:
         break
     else:
         print("正確な数値ではありません。")
-
+```
 
 ## ライセンス
 
