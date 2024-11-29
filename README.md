@@ -51,7 +51,7 @@ $ echo "abc" | ./twice.py
 # 動作環境
 
 ## 必要条件
-- Python 3.7～3.12
+- Python 3.8～3.11
 
 ## テストしたもの
 - Ubuntu 22.04.5 LTS
