@@ -2,14 +2,15 @@
 # SPDX-FileCopyrightText: 2024 Ben
 # SPDX-License-Identifier: BSD-3-Clause
 
-while True:
-    suuji = input("数字を入力してください: ")
-    
+import sys
+
+for line in sys.stdin:
+    suuji = line.strip()
+
     if suuji.isdigit():
         kazu = int(suuji)
         kekka = kazu * 2
-        print(suuji,"を二倍にすると",kekka,"になります。")
-        break
+        print(f"{suuji} を二倍にすると {kekka} になります。")
     else:
         print("正確な数値ではありません。")
 
