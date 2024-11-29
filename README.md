@@ -56,6 +56,9 @@ Python3を使うのでPython 3.6以上
 - OS:Ubuntu 22.04.5 LTS
 - Python バージョン:Python 3.8
 
+## 必要なソフトウェア
+- Python
+
 # テスト
 
 ## テスト方法
