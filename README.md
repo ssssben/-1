@@ -38,28 +38,11 @@ $ ./bai.py
 数字を入力してください: 19
 19 を二倍にすると 38 になります。
 ```
-## サンプル
-
-サンプルコード
-
-```python
-#!/usr/bin/env python3
-
-while True:
-    suuji = input("数字を入力してください: ")
-
-    if suuji.isdigit():
-        kazu = int(suuji)
-        kekka = kazu * 2
-        print(suuji, "を二倍にすると", kekka, "になります。")
-        break
-    else:
-        print("正確な数値ではありません。")
-```
 
 ## ライセンス
 
 このプロジェクトはMITライセンスのもとで公開されています。
+
 
 ## 必要条件
 Python3を使うのでPython 3.6以上
