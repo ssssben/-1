@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2024 Ben
 # SPDX-License-Identifier: BSD-3-Clause
-name: Check OS Version and Run Tests
+name: Check OS Version and Run Test
 
 on:
   push:
