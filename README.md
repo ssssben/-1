@@ -10,25 +10,30 @@ Pythonでユーザーに数字を入力させて、数ならシンプルに２�
 
 ## ダウンロード方法
 
+リポジトリをクローンします
 ```bash
-#リポジトリをクローン
-git clone https://github.com/ssssben/baisuu.git
-
-#ディレクトリに移動
-cd kadai1
-
-#権限の付与
-chmod +x kadai1
+$ git clone https://github.com/ssssben/baisuu.git
 ```
+
 ## 使い方
 
 実行方法の例:
 
+はじめにディレクトリを移動してください
+```
+$ cd kadai1
+```
+そして実行権限を付与してください
+```
+$ chmod +x twice.py
+```
+
 - 数字を入力した場合
 
-実行コマンド
+###実行コマンド
+
 ```bash
-echo "10" | python3 bai.py
+$ echo "10" | ./twice.py
 ```
 出力結果
 ```
@@ -39,7 +44,7 @@ echo "10" | python3 bai.py
 実行コマンド
 
 ```bash
-echo "abc" | python3 bai.py
+$ echo "abc" | ./twice.py
 ```
 
 出力結果
@@ -68,7 +73,7 @@ Python3を使うのでPython 3.6以上
 
 ```bash
 テストを実行
-bash -xv ./test.bash bai.py
+bash -xv ./test.bash twice.py
 ```
 
 ##テストしたもの
