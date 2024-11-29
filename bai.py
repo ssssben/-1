@@ -10,7 +10,7 @@ for line in sys.stdin:
     if suuji.isdigit():
         kazu = int(suuji)
         kekka = kazu * 2
-        print(f"{suuji} を二倍にすると {kekka} になります。")
+        print(kekka)
     else:
         print("正確な数値ではありません。")
 
