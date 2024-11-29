@@ -1,36 +1,19 @@
 # SPDX-FileCopyrightText: 2024 Ben
 # SPDX-License-Identifier: BSD-3-Clause
-name: Check OS Version and Run Test
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
+name: twice.py test
+on: push
 jobs:
-  check-and-test:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Check OS Version
-        run: cat /etc/os-release
-
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: ['3.7', '3.8', '3.9', '3.10', '3.11', '3.12']
-
-      - name: Make test script executable
-        run: chmod +x ./test.bash
-
-      - name: List repository files
-        run: ls -R
-
-      - name: Run tests
-        run: bash -xv ./test.bash
-
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ['3.7', '3.8', '3.9', '3.10', '3.11', '3.12'] 
+    - name: Make test script executable
+      run: chmod +x ./test.bash
+    - name: List repository files
+      run: ls -R
+    - name: Run tests
+      run: bash -xv ./test.bash
