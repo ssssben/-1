@@ -10,7 +10,7 @@ Pythonでユーザーに数字を入力させて、それが数じゃないな�
 
 ## インストール方法
 
-```
+```bash
 リポジトリをクローン
 git clone https://github.com/ssssben/baisuu.git
 
@@ -23,13 +23,13 @@ $ cd kadai1
 
 数字を入力した場合
 
-```
+```bash
 $ ./bai.py
 数字を入力してください: 11
 11 を二倍にすると 22 になります。
 ```
 数字以外を入力した場合
-```
+```bash
 $ ./bai.py
 数字を入力してください: abc
 正確な数値ではありません。
@@ -42,11 +42,23 @@ $ ./bai.py
 ## ライセンス
 
 このプロジェクトはMITライセンスのもとで公開されています。
-
-
+```test
+SPDX-License-Identifier: MIT
+```
 ## 必要条件
 Python3を使うのでPython 3.6以上
 
 ## 環境
-Ubuntu 22.04.5 LTS
-python 3.8
+- OS:Ubuntu 22.04.5 LTS
+- Python バージョン:Python 3.8
+
+# テスト
+
+## テスト方法
+```bash
+テストを実行
+bash -xv ./test.bash bai.py
+```
+以下の事例を検証します:
+- 正しい数字を入力した場合の挙動。
+- 数字以外を入力した場合に再入力を促す挙動。
