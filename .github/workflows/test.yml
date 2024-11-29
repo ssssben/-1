@@ -1,19 +1,28 @@
 # SPDX-FileCopyrightText: 2024 Ben
 # SPDX-License-Identifier: BSD-3-Clause
 name: twice.py test
-on: push
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11']  # 複数のPythonバージョンを追加
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-    - name: Make test script executable
-      run: chmod +x ./test.bash
-    - name: List repository files
-      run: ls -R
-    - name: Run tests
-      run: bash -xv ./test.bash
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}  # matrix から Python バージョンを取得
+      - name: Make test script executable
+        run: chmod +x ./test.bash
+      - name: List repository files
+        run: ls -R
+      - name: Run tests
+        run: bash -xv ./test.bash
+
