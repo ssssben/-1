@@ -30,7 +30,7 @@ $ chmod +x twice.py
 
 - 数字を入力した場合
 
-###実行コマンド
+##実行コマンド
 
 ```bash
 $ echo "10" | ./twice.py
@@ -59,6 +59,7 @@ $ echo "abc" | ./twice.py
 Python3を使うのでPython 3.6以上
 
 ##　動作環境
+
 - OS:Ubuntu 22.04.5 LTS
 - Python テスト済みバージョン:Python 3.8～3.11
 
@@ -72,6 +73,7 @@ bash -xv ./test.bash twice.py
 ```
 
 ##テストしたもの
+
 以下の事例を検証します:
 - 正しい数字を入力した場合の挙動。
 - 数字以外を入力した場合エラーを吐きます。
