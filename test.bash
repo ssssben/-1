@@ -3,13 +3,13 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 set -e
-set -x  # 詳細なコマンド表示
+set -x
 
-# Pythonスクリプトのパス
 script="twice.py"
 
-# 正常系テスト
 echo "5" | python3 "$script" | grep "10" || true
 echo "0" | python3 "$script" | grep "0" || true
 echo "-3" | python3 "$script" | grep "-6" || true
-
+echo "abc" | python3 "$script" | grep "正確な数値ではありません。" || true
+echo "" | python3 "$script" | grep "正確な数値ではありません。" || true
+echo "hello" | python3 "$script" | grep "正確な数値ではありません。" || true
