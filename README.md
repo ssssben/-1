@@ -47,5 +47,6 @@ $ ./bai.py
 ## 必要条件
 Python3を使うのでPython 3.6以上
 
-## Ubuntuのバージョン
-Ubuntu 22.04.5 LTSが使われています。
+## 環境
+Ubuntu 22.04.5 LTS
+python 3.8
