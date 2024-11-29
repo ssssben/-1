@@ -59,5 +59,5 @@ $ echo "abc" | ./twice.py
 ## ライセンス
 - このリポジトリはBSD-3-Clauseライセンスのもとで公開されています。
 
-##Copyright
-© 2024 Bun Hou
+## Copyright
+© 2024 Ben Fang
