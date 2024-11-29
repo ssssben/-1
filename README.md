@@ -27,10 +27,9 @@ $ cd kadai1
 ```
 $ chmod +x twice.py
 ```
+## 実行コマンド
 
 - 数字を入力した場合
-
-##実行コマンド
 
 ```bash
 $ echo "10" | ./twice.py
@@ -40,8 +39,6 @@ $ echo "10" | ./twice.py
 20
 ```
 - 数字以外を入力した場合
-
-実行コマンド
 
 ```bash
 $ echo "abc" | ./twice.py
@@ -58,7 +55,7 @@ $ echo "abc" | ./twice.py
 ## 必要条件
 Python3を使うのでPython 3.6以上
 
-##　動作環境
+## 動作環境
 
 - OS:Ubuntu 22.04.5 LTS
 - Python テスト済みバージョン:Python 3.8～3.11
@@ -72,7 +69,7 @@ Python3を使うのでPython 3.6以上
 bash -xv ./test.bash twice.py
 ```
 
-##テストしたもの
+## テストしたもの
 
 以下の事例を検証します:
 - 正しい数字を入力した場合の挙動。
