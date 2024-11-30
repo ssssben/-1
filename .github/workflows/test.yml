@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2024 Ben
 # SPDX-License-Identifier: BSD-3-Clause
-name: twice.py test
+name: twice test
 
 on:
   push:
