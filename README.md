@@ -25,14 +25,14 @@ $ cd kadai1
 ```
 そして実行権限を付与してください
 ```
-$ chmod +x twice.py
+$ chmod +x twice
 ```
 ## 実行コマンド
 
 - 数字を入力した場合
 
 ```bash
-$ echo "10" | ./twice.py
+$ echo "10" | ./twice
 ```
 出力結果
 ```
@@ -41,7 +41,7 @@ $ echo "10" | ./twice.py
 - 数字以外を入力した場合
 
 ```bash
-$ echo "abc" | ./twice.py
+$ echo "abc" | ./twice
 ```
 
 出力結果
